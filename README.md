@@ -1,5 +1,7 @@
 # git-coauthors
 
+Lists all authors of a git repo as potential co-authors of a commit.
+
 ## Usage
 
     git coauthors
