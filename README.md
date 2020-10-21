@@ -39,7 +39,7 @@ This is my current workflow. I have an insert-mode keymap in my `.vimrc`:
 When I'm writing a commit message, I type the partial name of the co-author and
 press <kbd>Ctrl-x</kbd><kbd>Ctrl-g</kbd> which pops up `fzf` with completions:
 
-{screenshot}
+![git coauthors as a completion with vim-fzf](https://user-images.githubusercontent.com/1797328/96714499-8318c380-13a2-11eb-8656-a6ae9e50652e.png)
 
 Pressing <kbd>Enter</kbd> finishes the completion with the selected text.
 
