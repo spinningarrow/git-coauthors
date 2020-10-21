@@ -20,7 +20,9 @@ These are some of the ways `git coauthors` can be integrated in a workflow.
 Quickly find a particular author and copy the _Co-Authored-By_ line to the
 clipboard:
 
-    git coauthors | grep Authorname | pbcopy
+```bash
+git coauthors | grep Authorname | pbcopy
+```
 
 ### With vim
 
@@ -28,13 +30,17 @@ clipboard:
 
 Paste the output of the above command directly in the buffer:
 
-    :read !git coauthors | grep Authorname
+```vim
+:read !git coauthors | grep Authorname
+```
 
 #### Option 2: Using [vim-fzf][] to turn this into a completion:
 
 This is my current workflow. I have an insert-mode keymap in my `.vimrc`:
 
-    inoremap <expr> <c-x><c-g> fzf#vim#complete('git coauthors')
+```vim
+inoremap <expr> <c-x><c-g> fzf#vim#complete('git coauthors')
+```
 
 When I'm writing a commit message, I type the partial name of the co-author and
 press <kbd>Ctrl-x</kbd><kbd>Ctrl-g</kbd> which pops up `fzf` with completions:
